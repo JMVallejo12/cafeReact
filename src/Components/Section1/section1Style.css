@@ -1,0 +1,73 @@
+.section-1-super-container{
+    background-image: url(../../assets/cafe-main.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient();
+    z-index: 0;
+}
+
+
+.h1-cafe{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    color: white;
+    z-index: 1;
+}
+
+.p-cafe{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.overlay {
+    position: absolute; /* Posicionamiento absoluto en relación con el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho del overlay igual al contenedor */
+    height: 100%; /* Alto del overlay igual al contenedor */
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con transparencia */
+}
+
+.btn-cafe{
+    z-index: 1;
+    height: 60px;
+    width: 190px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-cafe:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.line{
+    background-color: white;
+    height: 2px;
+    width: 50%;
+    z-index: 1;
+}

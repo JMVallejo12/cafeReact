@@ -1,0 +1,59 @@
+.navbar-super-container{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    /* border: 1px solid black; */
+}
+
+.navbar-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    height: 100%;
+    /* border: 1px solid black; */
+
+}
+
+.nav-list-social{
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar-left{
+    /* padding-top: 25px; */
+    /* border: 1px solid black; */
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.li-item{
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo-img{
+    height: 60px;
+}
+

@@ -1,0 +1,37 @@
+.events-super-container{
+    height: 900px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.event-left-container{
+    height: 900px;
+}
+
+.flayer-left{
+    height: 700px;
+    background-color: black;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flayer-right{
+    height: 700px;
+    background-color: black;
+    width: 500px;
+}
+
+.h3-event{
+    color: white;    
+}
+
+.flayer-1{
+    width: 300px;
+}
+
+.event-right-container{
+    height: 900px;
+
+}
