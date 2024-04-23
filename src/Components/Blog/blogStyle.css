@@ -1,4 +1,25 @@
 .blog-super-container{
     background-image: url(../../assets/bg-blog.jpg);
     height: 900px;
+    padding-top: 60px;
+    background-position: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.blog-title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.news-container{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }

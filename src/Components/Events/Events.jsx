@@ -5,7 +5,7 @@ import flayer2 from '../../assets/flayer-2.jpg'
 function Events(){
 
     return(
-        <div className='events-super-container'>
+        <div className='events-super-container' id='events'>
             
             <div className='event-left-container'>
                 <div className='flayer-left'>

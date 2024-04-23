@@ -18,9 +18,9 @@ function Navbar(){
                 </ul>   
                 <ul className='nav-list'>
                     <a href="" className='li-item'><li>Menú</li></a>
-                    <a href="" className='li-item'><li>Blog</li></a>
-                    <a href="" className='li-item'><li>Eventos</li></a>
-                    <a href="" className='li-item'><li>Contacto</li></a>
+                    <a href="#blog" className='li-item'><li>Blog</li></a>
+                    <a href="#events" className='li-item'><li>Eventos</li></a>
+                    <a href="#contact" className='li-item'><li>Contacto</li></a>
                 </ul>
             </div>
         </div>
