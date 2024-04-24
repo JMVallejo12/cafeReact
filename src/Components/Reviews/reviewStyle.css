@@ -1,0 +1,79 @@
+.reviews-super-container {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ul-review-container {
+    list-style: none;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.li-review-container {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    width: 400px; /* Ancho máximo para las reseñas */
+    margin: 25px;
+    height: fit-content;
+    /* overflow-y: scroll; */
+}
+
+.element-review {
+    margin: 0;
+}
+
+.element-review-down {
+    margin-top: 10px;
+    overflow-wrap: break-word; /* Romper palabras largas */
+}
+
+.up-review-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.review-desc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* El texto de la reseña ocupará todo el espacio restante */
+    margin-top: 10px;
+}
+
+.review-desc p {
+    margin: 0;
+}
+
+.show-btn{
+    width: 20%;
+    border: none;
+    background-color: white;
+}
+
+.show-btn:hover{
+    cursor: pointer;
+}
+
+.show-more{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.h2-review{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+}

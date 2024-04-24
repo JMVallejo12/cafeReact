@@ -1,0 +1,48 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 50px;
+}
+
+.form-super-container{
+    display: flex;
+    justify-content: center;
+}
+
+.label-review{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.input-review-text{
+    height: 150px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+.input-review{
+    height: 25px;
+    /* border-radius: 15px; */
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+.btn-review{
+    height: 35px;
+    width: 35%;
+}
+
+.btn-review-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}

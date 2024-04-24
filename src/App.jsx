@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Section1 from './Components/Section1/Section1'
 import Events from './Components/Events/Events'
 import Blog from './Components/Blog/Blog'
+import Reviews from './Components/Reviews/Reviews'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Section1 />
       <Events />
       <Blog />
+      <Reviews />
     </>
   )
 }
