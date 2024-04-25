@@ -2,20 +2,19 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import dotenv from 'dotenv';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB7LpNsKTB_7Tof8xbEX06htWittUJ2Fac",
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "cafereact-feb80.firebaseapp.com",
   projectId: "cafereact-feb80",
   storageBucket: "cafereact-feb80.appspot.com",
   messagingSenderId: "493272923344",
-  appId: "1:493272923344:web:3edf0dda0157ee4b7532d5"
+  appId: import.meta.env.APP_ID
 };
 
 // Initialize Firebase
