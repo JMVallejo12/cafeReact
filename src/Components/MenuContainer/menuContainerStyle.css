@@ -1,7 +1,7 @@
 .menu-super-container{
     padding-top: 10rem;
     /* border: 1px solid #000000; */
-    height: fit-content;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -9,6 +9,7 @@ import Blog from './Components/Blog/Blog'
 import Reviews from './Components/Reviews/Reviews'
 import MenuContainer from './Components/MenuContainer/MenuContainer'
 import { Route, Routes } from 'react-router-dom'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
           }/>
         <Route path='/menu' element={<MenuContainer />} />
       </Routes>
-      
+      <Footer />
     </>
   )
 }

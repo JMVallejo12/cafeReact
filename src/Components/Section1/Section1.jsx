@@ -5,7 +5,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 function Section1(){
 
     return(
-        <div className='section-1-super-container'>
+        <div className='section-1-super-container' id='section1'>
                 <div className='overlay'></div>
                 <h1 className='h1-cafe'>CAFÉ</h1>
                 <div className='line'></div>
