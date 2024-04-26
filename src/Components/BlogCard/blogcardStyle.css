@@ -21,6 +21,11 @@
     width: 300px;
     border-radius: 15px;
     height: 195px;
+    transition: transform 0.3s ease;
+}
+
+.img-blog:hover{
+    transform: scale(1.1);
 }
 
 .h3-blogcard{

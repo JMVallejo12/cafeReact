@@ -2,18 +2,22 @@ import './reviewStyle.css'
 import ReviewForm from '../ReviewForm/ReviewForm'
 import { collection, getDocs, getFirestore } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
+import Spinner from '../Spinner/Spinner'
 
 function Reviews() {
     const db = getFirestore()
     const colRef = collection(db, "reviews")
     const [reviews, setReviews] = useState([]);
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         const fetchReviews = async () => {
             try {
+                setIsLoading(true)
                 const reviewSnapshot = await getDocs(collection(db, 'reviews'))
                 const reviewData = reviewSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data(), expanded: false }))
                 setReviews(reviewData)
+                setIsLoading(false)
             }
             catch (error) {
                 console.log("Error al mostrar las reseñas")
@@ -30,6 +34,9 @@ function Reviews() {
             return review;
         }));
     };
+
+    if (isLoading) return <Spinner />
+
 
     return (
         <div className='reviews-super-container' id='reviews'>

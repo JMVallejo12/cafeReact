@@ -1,0 +1,6 @@
+.spinner-super-container{
+    height: 90vh;
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+}

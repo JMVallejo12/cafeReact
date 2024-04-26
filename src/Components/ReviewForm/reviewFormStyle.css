@@ -14,6 +14,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin-top: 10px;
 }
 .input-review-text{
     height: 150px;
@@ -23,6 +24,12 @@
     font-weight: 300;
     font-style: normal;
     padding-left: 10px;
+}
+
+.input-review-text:focus, .input-review:focus {
+    border-bottom: 1px solid black; 
+    outline: none; 
+    
 }
 
 .input-review{
@@ -39,6 +46,15 @@
 .btn-review{
     height: 35px;
     width: 35%;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.btn-review:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 .btn-review-container{
