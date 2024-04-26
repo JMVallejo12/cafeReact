@@ -32,7 +32,7 @@ function Reviews() {
     };
 
     return (
-        <div className='reviews-super-container'>
+        <div className='reviews-super-container' id='reviews'>
             <h2 className='h2-review'>RESEÑAS</h2>
             <div className='reviews-container'>
                 <ul className='ul-review-container'>

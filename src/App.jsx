@@ -7,16 +7,26 @@ import Section1 from './Components/Section1/Section1'
 import Events from './Components/Events/Events'
 import Blog from './Components/Blog/Blog'
 import Reviews from './Components/Reviews/Reviews'
+import MenuContainer from './Components/MenuContainer/MenuContainer'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Section1 />
-      <Events />
-      <Blog />
-      <Reviews />
+      <Routes>
+        <Route path='/' element={
+            <>
+            <Section1 />
+            <Events />
+            <Blog />
+            <Reviews />
+            </>
+          }/>
+        <Route path='/menu' element={<MenuContainer />} />
+      </Routes>
+      
     </>
   )
 }

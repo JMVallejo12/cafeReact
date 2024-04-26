@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './section1Style.css'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
@@ -9,7 +10,7 @@ function Section1(){
                 <h1 className='h1-cafe'>CAFÉ</h1>
                 <div className='line'></div>
                 <p className='p-cafe'>Ven a disfrutar de un buen café y postres, perfecto para una buena merienda</p>
-                <button className='btn-cafe'>MENÚ <ArrowForwardIcon /></button>
+                <Link to={"/menu"} className='btn-cafe'>MENÚ <ArrowForwardIcon /></Link>
         </div>
     )
 }
