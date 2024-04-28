@@ -1,13 +1,19 @@
 import './eventStyle.css'
 import flayer1 from '../../assets/flayer-1.jpg'
 import flayer2 from '../../assets/flayer-2.jpg'
+import Aos from 'aos'
+import { useEffect } from 'react'
+import 'aos/dist/aos.css'
 
 function Events(){
 
+    useEffect(()=>{
+        Aos.init()
+    },[])
+
     return(
         <div className='events-super-container' id='events'>
-            
-            <div className='event-left-container'>
+            <div className='event-left-container' data-aos="fade-up">
                 <div className='flayer-left'>
                     <img src={flayer1} alt="Imagen de la cafeteria" className='flayer-1'/>
                     <h3 className='h3-event'>¡DARDOS A FULL!</h3>
@@ -17,7 +23,7 @@ function Events(){
                 </div>
             </div>
 
-            <div className='event-right-container'>
+            <div className='event-right-container' data-aos="fade-down">
                 <div className='flayer-right'>
                     <h3 className='h3-event-r'>¡CANTANTE EN VIVO!</h3>
                     <div className='line-event'></div>

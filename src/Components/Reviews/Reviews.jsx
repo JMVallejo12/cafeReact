@@ -3,6 +3,8 @@ import ReviewForm from '../ReviewForm/ReviewForm'
 import { collection, getDocs, getFirestore } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
 import Spinner from '../Spinner/Spinner'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Reviews() {
     const db = getFirestore()
@@ -26,6 +28,10 @@ function Reviews() {
         fetchReviews()
     }, [db])
 
+    useEffect(()=>{
+        Aos.init()
+    },[])
+
     const toggleShowReview = (id) => {
         setReviews(reviews.map(review => {
             if (review.id === id) {
@@ -39,12 +45,12 @@ function Reviews() {
 
 
     return (
-        <div className='reviews-super-container' id='reviews'>
+        <div className='reviews-super-container' id='reviews' >
             <h2 className='h2-review'>RESEÑAS</h2>
             <div className='reviews-container'>
                 <ul className='ul-review-container'>
                     {reviews.map((review) => (
-                        <li key={review.id} className='li-review-container'>
+                        <li key={review.id} className='li-review-container' data-aos="zoom-in">
                             <div className='up-review-card'>
                                 <p className='element-review'><strong>Nombre:</strong> {review.nombre}</p>
                                 <p className='element-review'>EMAIL: {review.email}</p>
